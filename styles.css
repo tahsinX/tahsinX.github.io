@@ -1,0 +1,509 @@
+/* ==========================================================================
+   IBNUL TAHSIN RIHAN - PERSONAL HUB
+   Dark + Moody + Masculine + Elegant + Espresso & Burnt Orange
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --bg-void: #050505;
+  --bg-base: #080706;
+  --bg-surface: #0d0b09;
+  --bg-card: #140f0c;
+  --bg-card-hover: #1c1410;
+  --bg-panel: #241712;
+
+  /* Borders */
+  --border-subtle: rgba(74, 33, 23, 0.4);
+  --border-medium: rgba(122, 50, 25, 0.5);
+  --border-accent: rgba(214, 106, 42, 0.55);
+  --border-glow: rgba(214, 106, 42, 0.75);
+
+  /* Accents */
+  --accent-maroon: #351914;
+  --accent-espresso: #4a2117;
+  --accent-deep: #7a3219;
+  --accent-rust: #a84a20;
+  --accent-orange: #d66a2a;
+  --accent-amber: #ea833e;
+  --accent-glow: rgba(214, 106, 42, 0.25);
+  --accent-glow-strong: rgba(214, 106, 42, 0.45);
+
+  /* Typography */
+  --text-primary: #f1e7dc;
+  --text-secondary: rgba(241, 231, 220, 0.75);
+  --text-muted: rgba(241, 231, 220, 0.45);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 24px rgba(214, 106, 42, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-rust);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Atmospheric Layered Living Background
+   ========================================================================== */
+
+.ambient-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(74, 33, 23, 0.42) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(53, 25, 20, 0.35) 0%, transparent 55%),
+    radial-gradient(circle at 80% 75%, rgba(122, 50, 25, 0.25) 0%, transparent 50%),
+    linear-gradient(180deg, #050505 0%, #0d0b09 50%, #080706 100%);
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.ambient-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(74, 33, 23, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 33, 23, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
+}
+
+/* Floating Embers */
+.ember-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(214, 106, 42, 0.7);
+  box-shadow: 0 0 8px rgba(214, 106, 42, 0.8), 0 0 16px rgba(122, 50, 25, 0.5);
+  pointer-events: none;
+  animation: driftEmber 16s linear infinite;
+}
+
+@keyframes driftEmber {
+  0% {
+    transform: translateY(105vh) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(50px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Custom Precision Cursor
+   ========================================================================== */
+
+.cursor-outer {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(214, 106, 42, 0.55);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  backdrop-filter: blur(1px);
+}
+
+.cursor-inner {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-orange);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px var(--accent-orange);
+}
+
+.cursor-outer.hovered {
+  width: 52px;
+  height: 52px;
+  border-color: var(--accent-amber);
+  background: rgba(214, 106, 42, 0.08);
+}
+
+@media (pointer: coarse), (max-width: 768px) {
+  .cursor-outer, .cursor-inner {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   Main Container & Layout
+   ========================================================================== */
+
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1.5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Decorative Framing Lines */
+.decorative-line {
+  height: 1px;
+  width: 180px;
+  background: linear-gradient(90deg, transparent, rgba(214, 106, 42, 0.5), transparent);
+  margin: 1.5rem auto;
+  animation: expandLine 1.8s ease-out forwards;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 260px;
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Header / Hero Details
+   ========================================================================== */
+
+.monogram-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #1c1410 0%, #351914 100%);
+  border: 1px solid var(--border-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--accent-orange);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.75rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  user-select: none;
+}
+
+.monogram-badge:hover {
+  transform: translateY(-3px) scale(1.08) rotate(-4deg);
+  border-color: var(--accent-orange);
+  box-shadow: 0 12px 30px rgba(214, 106, 42, 0.4);
+}
+
+.monogram-badge:active {
+  transform: scale(0.95);
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6.5vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin-bottom: 0.85rem;
+  background: linear-gradient(135deg, #f1e7dc 10%, #ea833e 70%, #d66a2a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.hero-title {
+  font-family: var(--font-mono);
+  font-size: clamp(0.78rem, 2vw, 0.95rem);
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  animation: fadeIn 1.4s ease-out;
+}
+
+.hero-title span.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent-orange);
+  display: inline-block;
+}
+
+/* ==========================================================================
+   The 5 Social Link Cards (Dark Coffee, Burnt Orange, Tactile 3D)
+   ========================================================================== */
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 580px;
+  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Centering the 5th item */
+.links-grid > :nth-child(5) {
+  grid-column: 1 / -1;
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+  .links-grid > :nth-child(5) {
+    grid-column: auto;
+    max-width: 100%;
+  }
+}
+
+.social-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.15rem 1.65rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+/* Shimmer Sweep on Hover */
+.social-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(214, 106, 42, 0.15), transparent);
+  transition: left 0.6s ease;
+}
+
+.social-card:hover::before {
+  left: 100%;
+}
+
+.social-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--accent-orange);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.social-card:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-orange);
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.social-card:hover .card-icon {
+  transform: scale(1.18) rotate(4deg);
+  color: var(--accent-amber);
+}
+
+.card-name {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.social-card:hover .card-name {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Secret Easter Egg Terminal Overlay
+   ========================================================================== */
+
+.easter-egg-terminal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.terminal-box {
+  background: #0d0b09;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 580px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(214, 106, 42, 0.35);
+  overflow: hidden;
+  position: relative;
+}
+
+.terminal-topbar {
+  background: #1b1410;
+  padding: 0.65rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.terminal-title {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent-orange);
+  letter-spacing: 0.1em;
+}
+
+.terminal-body {
+  padding: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background: var(--accent-orange);
+  vertical-align: middle;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.hub-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-top: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

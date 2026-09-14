@@ -3,30 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ibnul Tahsin Rihan - Frontend Developer | Portfolio</title>
-  
+  <title>Ibnul Tahsin Rihan - Frontend Developer | Hub</title>
+
   <!-- Google Site Verification -->
   <meta name="google-site-verification" content="DXKWFkITYxLiH9jIfPnPfUjVHQXYynZN68E_21q90wQ" />
-  
+
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Ibnul Tahsin Rihan - Frontend Developer and Tech Enthusiast. Building modern web experiences with cutting-edge technologies. View my portfolio at ibnultahsinrihan.vercel.app">
-  <meta name="keywords" content="Ibnul Tahsin Rihan, Frontend Developer, Web Developer, React, JavaScript, Tech Enthusiast, Portfolio">
+  <meta name="description"
+    content="Ibnul Tahsin Rihan - Frontend Developer and Tech Enthusiast. Building modern web experiences with cutting-edge technologies. View my portfolio and socials.">
+  <meta name="keywords"
+    content="Ibnul Tahsin Rihan, Frontend Developer, Web Developer, React, JavaScript, Tech Enthusiast, Portfolio">
   <meta name="author" content="Ibnul Tahsin Rihan">
   <meta name="robots" content="index, follow">
-  
+
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ibnul Tahsin Rihan - Frontend Developer">
-  <meta property="og:description" content="Frontend Developer & Tech Enthusiast building modern web experiences. View my portfolio at ibnultahsinrihan.vercel.app">
+  <meta property="og:description"
+    content="Frontend Developer & Tech Enthusiast building modern web experiences.">
   <meta property="og:url" content="https://tahsinx.github.io/">
   <meta property="og:image" content="https://tahsinx.github.io/og-image.jpg">
-  
-  <!-- Twitter Card -->
+
+  <!-- X / Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ibnul Tahsin Rihan - Frontend Developer">
-  <meta name="twitter:description" content="Frontend Developer & Tech Enthusiast building modern web experiences. View my portfolio at ibnultahsinrihan.vercel.app">
+  <meta name="twitter:description"
+    content="Frontend Developer & Tech Enthusiast building modern web experiences.">
   <meta name="twitter:image" content="https://tahsinx.github.io/og-image.jpg">
-  
+
   <!-- Structured Data for Google -->
   <script type="application/ld+json">
   {
@@ -46,419 +50,278 @@
     "knowsAbout": ["Frontend Development", "React", "JavaScript", "Web Development"]
   }
   </script>
-  
-  <!-- React and ReactDOM -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  
-  <!-- Babel for JSX -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Space Grotesk', sans-serif;
-      background: #0a0a0f;
-      color: #ffffff;
-      overflow-x: hidden;
-      min-height: 100vh;
-    }
-    
-    #root {
-      min-height: 100vh;
-    }
-    
-    /* Animated Background */
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%);
-    }
-    
-    .particle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      animation: float 15s infinite;
-    }
-    
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100vh) rotate(720deg);
-        opacity: 0;
-      }
-    }
-    
-    /* Main Content */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      animation: fadeInUp 1.5s ease-out;
-    }
-    
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .name {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.5rem, 8vw, 6rem);
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s ease-in-out infinite;
-      background-size: 200% auto;
-    }
-    
-    @keyframes shimmer {
-      0%, 100% {
-        background-position: 0% center;
-      }
-      50% {
-        background-position: 200% center;
-      }
-    }
-    
-    .title {
-      font-size: clamp(1rem, 3vw, 1.5rem);
-      font-weight: 300;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 3rem;
-      animation: fadeInUp 1.5s ease-out 0.3s backwards;
-    }
-    
-    /* Social Links */
-    .social-links {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeInUp 1.5s ease-out 0.6s backwards;
-    }
-    
-    .social-link {
-      position: relative;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 500;
-      font-size: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 50px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .social-link svg {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-    
-    .social-link::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.5s;
-    }
-    
-    .social-link:hover::before {
-      left: 100%;
-    }
-    
-    .social-link:hover {
-      transform: translateY(-5px) scale(1.05);
-      border-color: rgba(102, 126, 234, 0.5);
-      background: rgba(102, 126, 234, 0.1);
-      box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
-    }
-    
-    /* Decorative Elements */
-    .decorative-line {
-      position: absolute;
-      background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent);
-      height: 1px;
-      width: 200px;
-      animation: expandLine 2s ease-out 1s forwards;
-      opacity: 0;
-    }
-    
-    .decorative-line.top {
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .decorative-line.bottom {
-      bottom: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    @keyframes expandLine {
-      from {
-        width: 0;
-        opacity: 0;
-      }
-      to {
-        width: 300px;
-        opacity: 1;
-      }
-    }
-    
-    /* Cursor Effect */
-    .cursor {
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      border: 2px solid rgba(102, 126, 234, 0.5);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.2s ease-out;
-      mix-blend-mode: difference;
-    }
-    
-    .cursor-dot {
-      position: fixed;
-      width: 6px;
-      height: 6px;
-      background: rgba(102, 126, 234, 0.8);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-    }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-      .social-links {
-        gap: 1rem;
-      }
-      
-      .social-link {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- React & ReactDOM 18 -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel Standalone -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div id="root"></div>
-  
+
   <script type="text/babel">
     const { useState, useEffect } = React;
-    
-    // Particle Component
-    const Particle = ({ delay }) => {
-      const [position, setPosition] = useState({
-        left: Math.random() * 100,
-        animationDelay: delay
-      });
-      
-      return (
-        <div 
-          className="particle" 
-          style={{
-            left: `${position.left}%`,
-            animationDelay: `${position.animationDelay}s`
-          }}
-        />
-      );
+
+    // =========================================================================
+    // ICONS (Accurate SVG paths with burnt-orange accent)
+    // =========================================================================
+    const Icons = {
+      Portfolio: () => (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+        </svg>
+      ),
+      GitHub: () => (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      ),
+      LinkedIn: () => (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      ),
+      X: () => (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      ),
+      Facebook: () => (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+      ),
+      Close: () => (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      )
     };
-    
-    // Custom Cursor Component
-    const CustomCursor = () => {
-      const [position, setPosition] = useState({ x: 0, y: 0 });
-      
+
+    // =========================================================================
+    // DATA: THE 5 SOCIAL LINKS
+    // =========================================================================
+    const SOCIAL_LINKS = [
+      {
+        name: 'Portfolio',
+        url: 'https://ibnultahsinrihan.vercel.app/',
+        icon: <Icons.Portfolio />
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/tahsinX',
+        icon: <Icons.GitHub />
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/',
+        icon: <Icons.LinkedIn />
+      },
+      {
+        name: 'X',
+        url: 'https://x.com/tahsinrihanX',
+        icon: <Icons.X />
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/ibnultahsinrihan',
+        icon: <Icons.Facebook />
+      }
+    ];
+
+    // =========================================================================
+    // COMPONENT: Custom Precision Cursor
+    // =========================================================================
+    const CustomCursor = ({ isHovered }) => {
+      const [pos, setPos] = useState({ x: -100, y: -100 });
+
       useEffect(() => {
-        const handleMouseMove = (e) => {
-          setPosition({ x: e.clientX, y: e.clientY });
-        };
-        
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
+        const handleMove = (e) => setPos({ x: e.clientX, y: e.clientY });
+        window.addEventListener('mousemove', handleMove);
+        return () => window.removeEventListener('mousemove', handleMove);
       }, []);
-      
+
       return (
         <>
-          <div 
-            className="cursor" 
-            style={{ 
-              left: `${position.x - 10}px`, 
-              top: `${position.y - 10}px` 
-            }} 
+          <div
+            className={`cursor-outer ${isHovered ? 'hovered' : ''}`}
+            style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
           />
-          <div 
-            className="cursor-dot" 
-            style={{ 
-              left: `${position.x - 3}px`, 
-              top: `${position.y - 3}px` 
-            }} 
+          <div
+            className="cursor-inner"
+            style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
           />
         </>
       );
     };
-    
-    // Main App Component
-    const App = () => {
-      const [particles, setParticles] = useState([]);
-      
+
+    // =========================================================================
+    // COMPONENT: Ambient Floating Embers
+    // =========================================================================
+    const AmbientBackground = () => {
+      const [embers, setEmbers] = useState([]);
+
       useEffect(() => {
-        // Generate particles
-        const newParticles = Array.from({ length: 50 }, (_, i) => ({
+        const items = Array.from({ length: 32 }, (_, i) => ({
           id: i,
-          delay: Math.random() * 15
+          left: Math.random() * 100,
+          delay: Math.random() * 16,
+          duration: 12 + Math.random() * 8,
+          size: Math.random() > 0.6 ? 4 : 2.5
         }));
-        setParticles(newParticles);
+        setEmbers(items);
       }, []);
-      
-      const socialLinks = [
-        { 
-          name: 'Portfolio', 
-          url: 'https://ibnultahsinrihan.vercel.app/', 
-          icon: (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-            </svg>
-          )
-        },
-        { 
-          name: 'GitHub', 
-          url: 'https://github.com/tahsinX', 
-          icon: (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          )
-        },
-        { 
-          name: 'LinkedIn', 
-          url: 'https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/', 
-          icon: (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          )
-        },
-        { 
-          name: 'Facebook', 
-          url: 'https://www.facebook.com/ibnultahsinrihan', 
-          icon: (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-          )
-        },
-        { 
-          name: 'Twitter', 
-          url: 'https://x.com/tahsinrihanX', 
-          icon: (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-          )
+
+      return (
+        <div className="ambient-background">
+          <div className="ambient-grid"></div>
+          <div className="grain-overlay"></div>
+          {embers.map((ember) => (
+            <div
+              key={ember.id}
+              className="ember-particle"
+              style={{
+                left: `${ember.left}%`,
+                animationDelay: `${ember.delay}s`,
+                animationDuration: `${ember.duration}s`,
+                width: `${ember.size}px`,
+                height: `${ember.size}px`
+              }}
+            />
+          ))}
+        </div>
+      );
+    };
+
+    // =========================================================================
+    // COMPONENT: Secret Easter Egg Modal
+    // =========================================================================
+    const EasterEggModal = ({ isOpen, onClose }) => {
+      if (!isOpen) return null;
+
+      return (
+        <div className="easter-egg-terminal" onClick={onClose}>
+          <div className="terminal-box" onClick={(e) => e.stopPropagation()}>
+            <div className="terminal-topbar">
+              <span className="terminal-title">ESPRESSO CORE v2.6.4 // EASTER EGG</span>
+              <button
+                onClick={onClose}
+                style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}
+              >
+                <Icons.Close />
+              </button>
+            </div>
+            <div className="terminal-body">
+              <p style={{ color: '#ea833e', marginBottom: '0.8rem' }}>
+                &gt; USER: Ibnul Tahsin Rihan (@tahsinX)<br />
+                &gt; THEME: Dark Espresso & Burnt Orange<br />
+                &gt; STATUS: Fully Active & Tactile
+              </p>
+              <p style={{ color: 'var(--text-secondary)' }}>
+                You discovered the secret terminal! The redesign is built on pure React & Vanilla CSS with GPU-accelerated micro-interactions.
+              </p>
+              <p style={{ marginTop: '1.2rem' }}>
+                <span style={{ color: 'var(--accent-orange)' }}>tahsinX:~$</span> echo "Welcome to the hub"
+                <span className="terminal-cursor"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    // =========================================================================
+    // MAIN APP COMPONENT
+    // =========================================================================
+    const App = () => {
+      const [isHovered, setIsHovered] = useState(false);
+      const [easterEggOpen, setEasterEggOpen] = useState(false);
+      const [clicks, setClicks] = useState(0);
+
+      const handleMonogramClick = () => {
+        const next = clicks + 1;
+        setClicks(next);
+        if (next >= 3) {
+          setEasterEggOpen(true);
+          setClicks(0);
         }
-      ];
-      
+      };
+
       return (
         <>
-          <div className="background">
-            {particles.map(particle => (
-              <Particle key={particle.id} delay={particle.delay} />
-            ))}
-          </div>
-          
-          <CustomCursor />
-          
-          <div className="container">
-            <div className="decorative-line top"></div>
-            
-            <div className="hero">
-              <h1 className="name">Ibnul Tahsin Rihan</h1>
-              <p className="title">Frontend Developer | Tech Enthusiast</p>
-              
-              <div className="social-links">
-                {socialLinks.map((link, index) => (
+          <AmbientBackground />
+          <CustomCursor isHovered={isHovered} />
+
+          <div className="page-wrapper">
+            <div></div>
+
+            <main className="main-content">
+              <div className="decorative-line"></div>
+
+              <div
+                className="monogram-badge"
+                onClick={handleMonogramClick}
+                title="TR"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                TR
+              </div>
+
+              <h1 className="hero-name">Ibnul Tahsin Rihan</h1>
+
+              <div className="hero-title">
+                <span>Frontend Developer</span>
+              </div>
+
+              <div className="links-grid">
+                {SOCIAL_LINKS.map((link) => (
                   <a
-                    key={index}
+                    key={link.name}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="social-link"
-                    style={{ animationDelay: `${0.9 + index * 0.1}s` }}
+                    className="social-card"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
                   >
-                    {link.icon} {link.name}
+                    <span className="card-icon">{link.icon}</span>
+                    <span className="card-name">{link.name}</span>
                   </a>
                 ))}
               </div>
-            </div>
-            
-            <div className="decorative-line bottom"></div>
+
+              <div className="decorative-line" style={{ marginTop: '2.5rem' }}></div>
+            </main>
+
+            <footer className="hub-footer">
+              &copy; {new Date().getFullYear()} Ibnul Tahsin Rihan
+            </footer>
           </div>
+
+          <EasterEggModal
+            isOpen={easterEggOpen}
+            onClose={() => setEasterEggOpen(false)}
+          />
         </>
       );
     };
-    
-    // Render the app
+
+    // Render React Application
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
