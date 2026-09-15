@@ -254,7 +254,22 @@
                 <Icons.GoogleIndex />
               </div>
 
-              <h1 className="hero-name">Ibnul Tahsin Rihan</h1>
+              <h1
+                className="hero-name"
+                aria-label="Ibnul Tahsin Rihan"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                {"Ibnul Tahsin Rihan".split('').map((char, index) => (
+                  <span
+                    key={index}
+                    className="wave-char"
+                    style={{ '--char-i': index }}
+                  >
+                    {char === ' ' ? '\u00A0' : char}
+                  </span>
+                ))}
+              </h1>
 
               <div className="hero-title">
                 <span>Frontend Developer</span>
