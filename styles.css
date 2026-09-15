@@ -1,7 +1,4 @@
-/* ==========================================================================
-   IBNUL TAHSIN RIHAN - PERSONAL HUB
-   Dark + Moody + Masculine + Elegant + Espresso & Burnt Orange
-   ========================================================================== */
+
 
 :root {
   /* Colors */
@@ -214,21 +211,9 @@ body {
 /* Decorative Framing Lines */
 .decorative-line {
   height: 1px;
-  width: 180px;
+  width: 260px;
   background: linear-gradient(90deg, transparent, rgba(214, 106, 42, 0.5), transparent);
   margin: 1.5rem auto;
-  animation: expandLine 1.8s ease-out forwards;
-}
-
-@keyframes expandLine {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 260px;
-    opacity: 1;
-  }
 }
 
 /* ==========================================================================
@@ -236,21 +221,17 @@ body {
    ========================================================================== */
 
 .monogram-badge {
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, #1c1410 0%, #351914 100%);
   border: 1px solid var(--border-medium);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--accent-orange);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-bottom: 1.75rem;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
   user-select: none;
@@ -273,11 +254,7 @@ body {
   letter-spacing: -0.02em;
   line-height: 1.12;
   margin-bottom: 0.85rem;
-  background: linear-gradient(135deg, #f1e7dc 10%, #ea833e 70%, #d66a2a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: fadeIn 1.2s ease-out;
+  color: var(--accent-orange);
 }
 
 .hero-title {
@@ -292,7 +269,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  animation: fadeIn 1.4s ease-out;
 }
 
 .hero-title span.dot {
@@ -303,9 +279,6 @@ body {
   display: inline-block;
 }
 
-/* ==========================================================================
-   The 5 Social Link Cards (Dark Coffee, Burnt Orange, Tactile 3D)
-   ========================================================================== */
 
 .links-grid {
   display: grid;
@@ -313,25 +286,12 @@ body {
   gap: 1.25rem;
   width: 100%;
   max-width: 580px;
-  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Centering the 5th item */
-.links-grid > :nth-child(5) {
-  grid-column: 1 / -1;
-  max-width: 280px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 @media (max-width: 540px) {
   .links-grid {
     grid-template-columns: 1fr;
     max-width: 320px;
-  }
-  .links-grid > :nth-child(5) {
-    grid-column: auto;
-    max-width: 100%;
   }
 }
 
