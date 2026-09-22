@@ -18,44 +18,79 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Ibnul Tahsin Rihan - Frontend Developer and Tech Enthusiast. Building modern web experiences with cutting-edge technologies. View my portfolio and socials.">
+    content="Official Social Hub of Ibnul Tahsin Rihan (Tahsin / Rihan) - Frontend Developer. Connect with me on Facebook, GitHub, LinkedIn, X (Twitter), Portfolio, and Email.">
   <meta name="keywords"
-    content="Ibnul Tahsin Rihan, Frontend Developer, Web Developer, React, JavaScript, Tech Enthusiast,ibnul tahsin rihan uiu, rihan, Rihan, Tahsin, tahsinX,ibnul tahsin rihan facebook, rihan facebook, ibnul tahsin rihan github, ibnul tahsin rihan linkedin,  Portfolio">
+    content="Ibnul Tahsin Rihan, Tahsin, Rihan, tahsinX, ibnul tahsin rihan facebook, tahsin facebook, rihan facebook, ibnul tahsin rihan github, tahsin github, rihan github, ibnul tahsin rihan linkedin, tahsin linkedin, rihan linkedin, ibnul tahsin rihan x, ibnul tahsin rihan twitter, ibnul tahsin rihan portfolio, ibnul tahsin rihan uiu, Frontend Developer, Web Developer, Portfolio, Social Hub">
   <meta name="author" content="Ibnul Tahsin Rihan">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ibnul Tahsin Rihan - Frontend Developer">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Ibnul Tahsin Rihan Hub">
+  <meta property="og:title" content="Ibnul Tahsin Rihan (Tahsin / Rihan) | Official Hub &amp; Socials">
   <meta property="og:description"
-    content="Frontend Developer & Tech Enthusiast building modern web experiences.">
+    content="Official Social Hub of Ibnul Tahsin Rihan (Tahsin / Rihan) - Frontend Developer. Connect on Facebook, GitHub, LinkedIn, X, Portfolio, and Email.">
   <meta property="og:url" content="https://tahsinx.github.io/">
-  <meta property="og:image" content="https://tahsinx.github.io/og-image.jpg">
+  <meta property="og:image" content="https://tahsinx.github.io/favicon-192x192.png">
 
   <!-- X / Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ibnul Tahsin Rihan - Frontend Developer">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@tahsinrihanX">
+  <meta name="twitter:creator" content="@tahsinrihanX">
+  <meta name="twitter:title" content="Ibnul Tahsin Rihan (Tahsin / Rihan) | Official Hub">
   <meta name="twitter:description"
-    content="Frontend Developer & Tech Enthusiast building modern web experiences.">
-  <meta name="twitter:image" content="https://tahsinx.github.io/og-image.jpg">
+    content="Official Social Hub of Ibnul Tahsin Rihan (Tahsin / Rihan) - Frontend Developer. Connect on Facebook, GitHub, LinkedIn, X, Portfolio, and Email.">
+  <meta name="twitter:image" content="https://tahsinx.github.io/favicon-192x192.png">
 
-  <!-- Structured Data for Google -->
+  <!-- Structured Data (JSON-LD) for Search Engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ibnul Tahsin Rihan",
-    "jobTitle": "Frontend Developer",
-    "description": "Frontend Developer and Tech Enthusiast",
-    "url": "https://tahsinx.github.io/",
-    "sameAs": [
-      "https://ibnultahsinrihan.vercel.app/",
-      "https://github.com/tahsinX",
-      "https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/",
-      "https://www.facebook.com/ibnultahsinrihan",
-      "https://x.com/tahsinrihanX"
-    ],
-    "knowsAbout": ["Frontend Development", "React", "JavaScript", "Web Development"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://tahsinx.github.io/#website",
+        "url": "https://tahsinx.github.io/",
+        "name": "Ibnul Tahsin Rihan Hub",
+        "alternateName": ["Tahsin Hub", "Rihan Hub", "tahsinX Hub", "Ibnul Tahsin Rihan Website"],
+        "description": "Official Social Hub of Ibnul Tahsin Rihan (Tahsin / Rihan)"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://tahsinx.github.io/#webpage",
+        "url": "https://tahsinx.github.io/",
+        "name": "Ibnul Tahsin Rihan (Tahsin / Rihan) | Official Hub & Socials",
+        "isPartOf": { "@id": "https://tahsinx.github.io/#website" },
+        "about": { "@id": "https://tahsinx.github.io/#person" },
+        "mainEntity": { "@id": "https://tahsinx.github.io/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tahsinx.github.io/#person",
+        "name": "Ibnul Tahsin Rihan",
+        "alternateName": ["Tahsin", "Rihan", "tahsinX", "Ibnul Tahsin", "Tahsin Rihan"],
+        "givenName": "Ibnul Tahsin",
+        "familyName": "Rihan",
+        "jobTitle": "Frontend Developer",
+        "description": "Frontend Developer and Tech Enthusiast building modern web experiences.",
+        "url": "https://tahsinx.github.io/",
+        "image": "https://tahsinx.github.io/favicon-192x192.png",
+        "sameAs": [
+          "https://www.facebook.com/ibnultahsinrihan",
+          "https://github.com/tahsinX",
+          "https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/",
+          "https://x.com/tahsinrihanX",
+          "https://ibnultahsinrihan.vercel.app/"
+        ],
+        "knowsAbout": [
+          "Frontend Development",
+          "React",
+          "JavaScript",
+          "Web Development",
+          "Software Engineering"
+        ]
+      }
+    ]
   }
   </script>
 
@@ -78,6 +113,22 @@
 </head>
 
 <body>
+  <!-- Fallback content for search engines and non-JS clients -->
+  <noscript>
+    <div style="padding: 2.5rem 1.5rem; max-width: 600px; margin: 0 auto; text-align: center; font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif; color: #ece6e0; background: #0e0d0c; border-radius: 12px; border: 1px solid rgba(234, 131, 62, 0.2);">
+      <h1 style="color: #ea833e; margin-bottom: 0.5rem; font-size: 1.8rem;">Ibnul Tahsin Rihan (Tahsin / Rihan)</h1>
+      <p style="color: #a89f91; margin-bottom: 1.5rem; line-height: 1.5;">Frontend Developer &amp; Tech Enthusiast. Official hub and verified social media links.</p>
+      <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li><a href="https://ibnultahsinrihan.vercel.app/" style="color: #ea833e; text-decoration: none; font-weight: 500;">Portfolio &mdash; Ibnul Tahsin Rihan</a></li>
+        <li><a href="https://www.facebook.com/ibnultahsinrihan" rel="me" style="color: #ea833e; text-decoration: none; font-weight: 500;">Facebook &mdash; Ibnul Tahsin Rihan (@ibnultahsinrihan)</a></li>
+        <li><a href="https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/" rel="me" style="color: #ea833e; text-decoration: none; font-weight: 500;">LinkedIn &mdash; Ibnul Tahsin Rihan</a></li>
+        <li><a href="https://github.com/tahsinX" rel="me" style="color: #ea833e; text-decoration: none; font-weight: 500;">GitHub &mdash; Ibnul Tahsin Rihan (@tahsinX)</a></li>
+        <li><a href="https://x.com/tahsinrihanX" rel="me" style="color: #ea833e; text-decoration: none; font-weight: 500;">X (Twitter) &mdash; Ibnul Tahsin Rihan (@tahsinrihanX)</a></li>
+        <li><a href="mailto:ibnultahsinrihan@gmail.com" style="color: #ea833e; text-decoration: none; font-weight: 500;">Email &mdash; ibnultahsinrihan@gmail.com</a></li>
+      </ul>
+    </div>
+  </noscript>
+
   <div id="root"></div>
 
   <script type="text/babel">
@@ -176,31 +227,37 @@
     const SOCIAL_LINKS = [
       {
         name: 'Portfolio',
+        title: 'Ibnul Tahsin Rihan Portfolio',
         url: 'https://ibnultahsinrihan.vercel.app/',
         icon: <Icons.Portfolio />
       },
       {
         name: 'Facebook',
+        title: 'Ibnul Tahsin Rihan on Facebook (@ibnultahsinrihan)',
         url: 'https://www.facebook.com/ibnultahsinrihan',
         icon: <Icons.Facebook />
       },
       {
         name: 'LinkedIn',
+        title: 'Ibnul Tahsin Rihan on LinkedIn',
         url: 'https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/',
         icon: <Icons.LinkedIn />
       },
       {
         name: 'GitHub',
+        title: 'Ibnul Tahsin Rihan on GitHub (@tahsinX)',
         url: 'https://github.com/tahsinX',
         icon: <Icons.GitHub />
       },
       {
         name: 'X',
+        title: 'Ibnul Tahsin Rihan on X / Twitter (@tahsinrihanX)',
         url: 'https://x.com/tahsinrihanX',
         icon: <Icons.X />
       },
       {
         name: 'Email',
+        title: 'Send an Email to Ibnul Tahsin Rihan',
         url: 'https://mail.google.com/mail/?view=cm&fs=1&to=ibnultahsinrihan@gmail.com',
         icon: <Icons.Email />
       }
@@ -323,7 +380,9 @@
                     key={link.name}
                     href={link.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
+                    title={link.title}
+                    aria-label={link.title}
                     className="social-card"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
