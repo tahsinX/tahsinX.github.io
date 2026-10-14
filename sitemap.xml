@@ -3,13 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tahsinx.github.io/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://tahsinx.github.io/ibnul-tahsin-rihan.jpg</image:loc>
-      <image:title>Ibnul Tahsin Rihan</image:title>
-      <image:caption>Ibnul Tahsin Rihan (Tahsin / Rihan) - Frontend Developer Profile Photo</image:caption>
+      <image:title>Ibnul Tahsin Rihan (Ibnul / Tahsin / Rihan / tahsinX)</image:title>
+      <image:caption>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান) - Frontend Developer | UIU | BCSIR High School | Associated Network: East West Medical College (EWMC 19th Batch), Dr. Kaniz Fatema, Dr. Mahbub Alam Khokon, Dr. Farzana Yasmin Laboni, Prof. Dr. Md. Habibur Rahman (IU Kushtia), Naogaon</image:caption>
     </image:image>
   </url>
 </urlset>
