@@ -1,4 +1,32 @@
+# Default: Allow all crawlers
 User-agent: *
+Allow: /
+
+# Google Search & Image Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing Search Crawler
+User-agent: Bingbot
+Allow: /
+
+# AI Search Crawlers (ChatGPT, GPT, Claude, Perplexity)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://tahsinx.github.io/sitemap.xml
