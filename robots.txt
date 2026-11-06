@@ -29,4 +29,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://tahsinx.github.io/sitemap.xml
+Sitemap: https://tahsinx.vercel.app/sitemap.xml

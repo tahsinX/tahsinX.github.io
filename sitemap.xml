@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://tahsinx.github.io/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://tahsinx.vercel.app/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://tahsinx.github.io/ibnul-tahsin-rihan.jpeg</image:loc>
-      <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান) - Full Portrait</image:title>
-      <image:caption>Ibnul Tahsin Rihan - Full Portrait - Frontend Developer</image:caption>
+      <image:loc>https://tahsinx.vercel.app/ibnul-tahsin-rihan.jpeg</image:loc>
+      <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান)</image:title>
+      <image:caption>Ibnul Tahsin Rihan - Frontend Developer</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://tahsinx.github.io/passportsizeformal.jpeg</image:loc>
+      <image:loc>https://tahsinx.vercel.app/passportsizeformal.jpeg</image:loc>
       <image:title>Ibnul Tahsin Rihan - Formal Portrait</image:title>
       <image:caption>Ibnul Tahsin Rihan (Tahsin / Rihan) formal profile portrait - Frontend Developer</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://tahsinx.github.io/apple-touch-icon.png</image:loc>
+      <image:loc>https://tahsinx.vercel.app/apple-touch-icon.png</image:loc>
       <image:title>Ibnul Tahsin Rihan Brand Monogram Icon</image:title>
       <image:caption>Official brand logo icon of Ibnul Tahsin Rihan</image:caption>
     </image:image>
