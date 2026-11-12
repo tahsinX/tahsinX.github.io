@@ -3,23 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tahsinx.vercel.app/</loc>
-    <lastmod>2026-11-06</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://tahsinx.vercel.app/ibnul-tahsin-rihan.jpeg</image:loc>
       <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান)</image:title>
-      <image:caption>Ibnul Tahsin Rihan - Frontend Developer</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://tahsinx.vercel.app/passportsizeformal.jpeg</image:loc>
-      <image:title>Ibnul Tahsin Rihan - Formal Portrait</image:title>
-      <image:caption>Ibnul Tahsin Rihan (Tahsin / Rihan) formal profile portrait - Frontend Developer</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://tahsinx.vercel.app/apple-touch-icon.png</image:loc>
-      <image:title>Ibnul Tahsin Rihan Brand Monogram Icon</image:title>
-      <image:caption>Official brand logo icon of Ibnul Tahsin Rihan</image:caption>
+      <image:caption>Ibnul Tahsin Rihan - Frontend Developer Social Hub</image:caption>
     </image:image>
   </url>
 </urlset>
