@@ -66,4 +66,4 @@ User-agent: Diffbot
 Allow: /
 Allow: /llms.txt
 
-Sitemap: https://tahsinx.vercel.app/sitemap.xml
+Sitemap: https://tahsinx.github.io/sitemap.xml

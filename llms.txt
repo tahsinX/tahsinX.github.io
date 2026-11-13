@@ -1,12 +1,13 @@
-# Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান) — Developer Link Directory
+# Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান) — GitHub Pages Profile Card
 
-> Official developer link hub and verified social directory of Ibnul Tahsin Rihan (tahsinX), Frontend Developer and CSE undergraduate at United International University (UIU), based in Dhaka, Bangladesh.
+> Official GitHub Pages profile card and verified developer presence of Ibnul Tahsin Rihan (tahsinX), Frontend Developer and CSE undergraduate at United International University (UIU), based in Dhaka, Bangladesh.
 
 ## Role of This Domain
-This page (`https://tahsinx.vercel.app/`) serves as the centralized social and profile directory for Ibnul Tahsin Rihan. For detailed project case studies, technical stack, and software engineering work, refer to the primary portfolio.
+This page (`https://tahsinx.github.io/`) serves as the official GitHub Pages profile card for Ibnul Tahsin Rihan. For detailed project case studies, technical stack, and software engineering work, refer to the primary portfolio.
 
 ## Primary & Companion Properties
 - [Primary Portfolio](https://ibnultahsinrihan.vercel.app/): Main software engineering portfolio and project showcase.
+- [Vercel Link Directory](https://tahsinx.vercel.app/): High-performance centralized link directory.
 - [GitHub Pages Profile](https://tahsinx.github.io/): Public GitHub Pages profile card.
 
 ## Verified Social Channels
