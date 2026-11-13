@@ -13,7 +13,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# AI Search Crawlers (ChatGPT, GPT, Claude, Perplexity)
+# AI Search & LLM Crawlers (OpenAI, Anthropic, Perplexity, Apple, Google, Cohere)
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -26,7 +26,25 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
 Allow: /
 
 Sitemap: https://tahsinx.vercel.app/sitemap.xml
