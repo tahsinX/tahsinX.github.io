@@ -3,13 +3,20 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tahsinx.github.io/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://tahsinx.github.io/ibnul-tahsin-rihan.jpeg</image:loc>
-      <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান)</image:title>
-      <image:caption>Ibnul Tahsin Rihan - Frontend Developer Social Hub</image:caption>
+      <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান / Tahsin / Rihan / tahsinX)</image:title>
+      <image:caption>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান / Tahsin / Rihan / tahsinX) — Frontend Developer at Fazesoft and CSE Undergraduate at United International University (UIU), Dhaka, Bangladesh</image:caption>
+      <image:geo_location>Dhaka, Bangladesh</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://tahsinx.github.io/passportsizeformal.jpeg</image:loc>
+      <image:title>Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান / Tahsin / Rihan / tahsinX) - Formal Passport Photo</image:title>
+      <image:caption>Formal portrait photo of Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান / Tahsin / Rihan / tahsinX) — Frontend Developer at Fazesoft and CSE Undergraduate, Dhaka, Bangladesh</image:caption>
+      <image:geo_location>Dhaka, Bangladesh</image:geo_location>
     </image:image>
   </url>
 </urlset>

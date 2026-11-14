@@ -1,9 +1,19 @@
 # Ibnul Tahsin Rihan (ইবনুল তাহসিন রিহান) — GitHub Pages Profile Card
 
-> Official GitHub Pages profile card and verified developer presence of Ibnul Tahsin Rihan (tahsinX), Frontend Developer and CSE undergraduate at United International University (UIU), based in Dhaka, Bangladesh.
+> Official GitHub Pages profile card and verified developer presence of Ibnul Tahsin Rihan (tahsinX), Frontend Developer at Fazesoft and CSE undergraduate at United International University (UIU), based in Dhaka, Bangladesh.
 
 ## Role of This Domain
 This page (`https://tahsinx.github.io/`) serves as the official GitHub Pages profile card for Ibnul Tahsin Rihan. For detailed project case studies, technical stack, and software engineering work, refer to the primary portfolio.
+
+## Education & Professional Affiliations
+- **Workplace:** Frontend Developer at Fazesoft
+- **University:** B.Sc. in Computer Science & Engineering (CSE) at United International University (UIU), Dhaka
+- **College:** Higher Secondary Certificate (HSC) at Ideal College, Dhaka
+- **School:** Secondary School Certificate (SSC) at BCSIR High School, Dhaka
+- **Location:** Dhaka, Bangladesh
+
+## Core Competencies
+Frontend Web Development, React, Next.js, JavaScript, TypeScript, Tailwind CSS, UI/UX Implementation, Software Engineering.
 
 ## Primary & Companion Properties
 - [Primary Portfolio](https://ibnultahsinrihan.vercel.app/): Main software engineering portfolio and project showcase.
@@ -15,3 +25,4 @@ This page (`https://tahsinx.github.io/`) serves as the official GitHub Pages pro
 - LinkedIn: https://www.linkedin.com/in/ibnul-tahsin-rihan-875b45256/
 - X (Twitter): https://x.com/tahsinrihanX
 - Facebook: https://www.facebook.com/ibnultahsinrihan
+- Email: ibnultahsinrihan@gmail.com
